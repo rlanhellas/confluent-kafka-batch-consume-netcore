@@ -41,8 +41,8 @@ namespace WorkerService
                     _logger.LogInformation("Consumed {} results", consumeResults.Count);
                     if (consumeResults.Count > 0)
                     {
-                        _logger.LogInformation("Commit");
-                        consumer.Commit();
+                       // _logger.LogInformation("Commit");
+                       // consumer.Commit();
                      
                         _logger.LogInformation("SeekBach");
                        consumerBatch.SeekBatch();
